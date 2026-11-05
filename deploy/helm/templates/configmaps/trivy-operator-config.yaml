@@ -10,6 +10,7 @@ data:
   {{- end }}
   OPERATOR_LOG_DEV_MODE: {{ .Values.operator.logDevMode | quote }}
   OPERATOR_SCAN_JOB_TTL: {{ .Values.operator.scanJobTTL | quote }}
+  OPERATOR_SCAN_SECRET_TTL: {{ .Values.operator.scanSecretTTL | quote }}
   OPERATOR_SCAN_JOB_TIMEOUT: {{ .Values.operator.scanJobTimeout | quote }}
   OPERATOR_CONCURRENT_SCAN_JOBS_LIMIT: {{ .Values.operator.scanJobsConcurrentLimit | quote }}
   OPERATOR_CONCURRENT_NODE_COLLECTOR_LIMIT: {{ .Values.operator.scanNodeCollectorLimit | quote }}

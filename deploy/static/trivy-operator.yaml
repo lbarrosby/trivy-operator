@@ -2994,6 +2994,7 @@ metadata:
 data:
   OPERATOR_LOG_DEV_MODE: "false"
   OPERATOR_SCAN_JOB_TTL: ""
+  OPERATOR_SCAN_SECRET_TTL: ""
   OPERATOR_SCAN_JOB_TIMEOUT: "5m"
   OPERATOR_CONCURRENT_SCAN_JOBS_LIMIT: "10"
   OPERATOR_CONCURRENT_NODE_COLLECTOR_LIMIT: "1"
@@ -3119,7 +3120,7 @@ spec:
   template:
     metadata:
       annotations:
-        checksum/config: ad4fc83b05f2e90878ff579a95e970d2d35b3aed3f118b7b0b561dfb36ad1f8d
+        checksum/config: 4f1fc1e78292e1cb8617912746b3691679c4d6e02131eeb8b4001d4daff03af9
       labels:
         app.kubernetes.io/name: trivy-operator
         app.kubernetes.io/instance: trivy-operator
